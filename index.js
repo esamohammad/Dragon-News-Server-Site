@@ -62,6 +62,22 @@ app.get('/category/:id', (req, res) => {
 
 
 //💥💥💥💥💥💥💥💥💥💥💥💥💥
+// Link ar jonno ata lagbe only 8 non category nai tai amra all news neye nchhi
+app.get('/news', (req, res) =>{
+  res.send(news);
+});
+//💥💥💥💥💥💥💥💥💥💥💥💥💥
+
+
+
+
+
+
+
+
+
+
+//💥💥💥💥💥💥💥💥💥💥💥💥💥
 //params--- only for one news item call single news@@@
 app.get('/news/:id', (req, res) => {
   const id = req.params.id;
